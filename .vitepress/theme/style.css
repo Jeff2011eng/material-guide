@@ -719,8 +719,9 @@ body {
   }
   .home-guide { padding: 2rem 1rem 3rem; }
 
-  /* Hide redundant local nav (duplicate menu + back-to-top) */
-  .VPLocalNav {
+  /* Hide only outline dropdown (回到顶部), keep sidebar toggle */
+  .VPLocalNav .outline-link,
+  .VPLocalNav .flyout-button {
     display: none !important;
   }
 }
