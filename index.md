@@ -4,7 +4,7 @@ layout: page
 
 <div class="home-hero">
   <h1>部署物料准备指南</h1>
-  <p class="hero-sub">旗舰版代购网站私有化部署 — 按步骤准备物料，<strong>快速上线你的代购平台</strong></p>
+  <p class="hero-sub">代购网站私有化部署 — 按步骤准备物料，<strong>快速上线你的代购平台</strong></p>
 </div>
 
 <div class="phase-grid">

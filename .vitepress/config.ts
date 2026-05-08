@@ -2,10 +2,11 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: '部署物料准备指南',
-  description: '旗舰版代购网站 — 私有化部署物料准备引导',
+  description: '代购网站 — 私有化部署物料准备引导',
   lang: 'zh-CN',
   base: '/material-guide/',
   appearance: 'light',
+  cleanUrls: true,
 
   themeConfig: {
     nav: [
