@@ -12,13 +12,11 @@ export default {
     app.component('CopyTemplate', CopyTemplate)
   },
   setup() {
-    // On mobile, redirect the top nav hamburger to open the sidebar
-    // instead of the nav menu screen
     if (typeof window !== 'undefined') {
       import('vitepress').then(({ inBrowser }) => {
         if (!inBrowser) return
         const observer = new MutationObserver(() => {
-          const hamburger = document.querySelector('.VPNavBar .menu-button')
+          const hamburger = document.querySelector('.VPNavBarHamburger')
           const sidebarToggle = document.querySelector('.VPLocalNav .menu')
           if (hamburger && sidebarToggle && !hamburger.dataset.redirected) {
             hamburger.dataset.redirected = 'true'
