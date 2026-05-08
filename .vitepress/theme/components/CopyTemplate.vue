@@ -55,15 +55,15 @@ async function copyText() {
 <style scoped>
 .copy-card {
   margin: 20px 0;
-  border: 1px solid #E2E8F0;
+  border: 1px solid var(--vp-c-divider);
   border-radius: 10px;
   overflow: hidden;
-  background: #FFFFFF;
+  background: var(--vp-c-bg-soft);
   transition: border-color 200ms ease;
 }
 
 .copy-card:hover {
-  border-color: #0EA5E9;
+  border-color: var(--vp-c-brand-1);
 }
 
 .copy-head {
@@ -71,8 +71,8 @@ async function copyText() {
   justify-content: space-between;
   align-items: center;
   padding: 9px 16px;
-  background: #F8FAFC;
-  border-bottom: 1px solid #F1F5F9;
+  background: var(--vp-c-bg);
+  border-bottom: 1px solid var(--vp-c-divider);
 }
 
 .copy-label {
@@ -82,7 +82,7 @@ async function copyText() {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
   font-size: 0.8rem;
-  color: #475569;
+  color: var(--vp-c-text-2);
 }
 
 .copy-label svg {
@@ -96,9 +96,9 @@ async function copyText() {
   gap: 4px;
   padding: 4px 12px;
   border-radius: 6px;
-  border: 1px solid #0369A1;
+  border: 1px solid var(--vp-c-brand-1);
   background: transparent;
-  color: #0369A1;
+  color: var(--vp-c-brand-1);
   cursor: pointer;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 0.78rem;
@@ -107,8 +107,8 @@ async function copyText() {
 }
 
 .copy-btn:hover {
-  background: #0369A1;
-  color: white;
+  background: var(--vp-c-brand-1);
+  color: var(--vp-c-bg);
 }
 
 .copy-btn.copied {
@@ -131,7 +131,7 @@ async function copyText() {
   font-size: 0.85rem;
   line-height: 1.85;
   font-family: "JetBrains Mono", "Fira Code", "PingFang SC", monospace;
-  color: #475569;
+  color: var(--vp-c-text-2);
   white-space: pre-wrap;
   word-break: break-all;
 }

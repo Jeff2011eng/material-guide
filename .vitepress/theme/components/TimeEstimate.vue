@@ -24,8 +24,8 @@ defineProps<{
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 0.78rem;
   font-weight: 600;
-  background: rgba(3, 105, 161, 0.06);
-  color: #0369A1;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
   vertical-align: middle;
   margin-left: 8px;
 }

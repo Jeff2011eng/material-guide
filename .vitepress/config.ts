@@ -5,7 +5,6 @@ export default defineConfig({
   description: '代购网站 — 私有化部署物料准备引导',
   lang: 'zh-CN',
   base: '/material-guide/',
-  appearance: 'light',
   cleanUrls: true,
 
   themeConfig: {

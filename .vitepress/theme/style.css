@@ -54,6 +54,76 @@
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* --- Dark Mode Overrides --- */
+html.dark {
+  --color-navy: #F1F5F9;
+  --color-slate: #CBD5E1;
+  --color-sky: #38BDF8;
+  --color-sky-light: #7DD3FC;
+  --color-bg: #0F172A;
+  --color-bg-card: #1E293B;
+  --color-text: #F1F5F9;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #64748B;
+  --color-border: #334155;
+  --color-border-light: #1E293B;
+
+  --vp-c-brand-1: #38BDF8;
+  --vp-c-brand-2: #0EA5E9;
+  --vp-c-brand-3: #7DD3FC;
+  --vp-c-brand-soft: rgba(56, 189, 248, 0.08);
+
+  --phase-1: #38BDF8;
+  --phase-2: #2DD4BF;
+  --phase-3: #34D399;
+  --phase-4: #A78BFA;
+  --phase-5: #FB923C;
+  --phase-6: #F472B6;
+  --phase-7: #60A5FA;
+
+  --phase-1-bg: rgba(56,189,248,0.1);
+  --phase-2-bg: rgba(45,212,191,0.1);
+  --phase-3-bg: rgba(52,211,153,0.1);
+  --phase-4-bg: rgba(167,139,250,0.1);
+  --phase-5-bg: rgba(251,146,60,0.1);
+  --phase-6-bg: rgba(244,114,182,0.1);
+  --phase-7-bg: rgba(96,165,250,0.1);
+}
+
+/* Dark mode sidebar icons (lighter stroke colors) */
+html.dark .VPSidebar .group:nth-child(2) > .VPSidebarItem.level-0 > .item > h2.text::before { --icon-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2338BDF8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3Cpath d='M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z'/%3E%3C/svg%3E"); }
+
+html.dark .VPSidebar .group:nth-child(3) > .VPSidebarItem.level-0 > .item > h2.text::before { --icon-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%232DD4BF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9'/%3E%3Cpath d='M13.73 21a2 2 0 0 1-3.46 0'/%3E%3C/svg%3E"); }
+
+html.dark .VPSidebar .group:nth-child(4) > .VPSidebarItem.level-0 > .item > h2.text::before { --icon-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2334D399' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='1' y='4' width='22' height='16' rx='2' ry='2'/%3E%3Cline x1='1' y1='10' x2='23' y2='10'/%3E%3C/svg%3E"); }
+
+html.dark .VPSidebar .group:nth-child(5) > .VPSidebarItem.level-0 > .item > h2.text::before { --icon-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23A78BFA' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4'/%3E%3Cpolyline points='10 17 15 12 10 7'/%3E%3Cline x1='15' y1='12' x2='3' y2='12'/%3E%3C/svg%3E"); }
+
+html.dark .VPSidebar .group:nth-child(6) > .VPSidebarItem.level-0 > .item > h2.text::before { --icon-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23FB923C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='3' width='18' height='18' rx='2' ry='2'/%3E%3Ccircle cx='8.5' cy='8.5' r='1.5'/%3E%3Cpolyline points='21 15 16 10 5 21'/%3E%3C/svg%3E"); }
+
+html.dark .VPSidebar .group:nth-child(7) > .VPSidebarItem.level-0 > .item > h2.text::before { --icon-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23F472B6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z'/%3E%3Cpath d='m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z'/%3E%3Cpath d='M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0'/%3E%3Cpath d='M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5'/%3E%3C/svg%3E"); }
+
+html.dark .VPSidebar .group:nth-child(8) > .VPSidebarItem.level-0 > .item > h2.text::before { --icon-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2360A5FA' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/%3E%3C/svg%3E"); }
+
+/* Dark mode: callout title colors (brighter for dark bg) */
+html.dark .vp-doc .tip .title { color: #34D399 !important; }
+html.dark .vp-doc .warning .title { color: #FBBF24 !important; }
+html.dark .vp-doc .info .title { color: #38BDF8 !important; }
+html.dark .vp-doc .danger .title { color: #F87171 !important; }
+
+/* Dark mode: status badges (brighter) */
+html.dark .s-required { background: rgba(52,211,153,0.1); color: #34D399; }
+html.dark .s-optional { background: rgba(56,189,248,0.1); color: #38BDF8; }
+html.dark .s-partial  { background: rgba(251,191,36,0.1); color: #FBBF24; }
+html.dark .s-suggest  { background: rgba(96,165,250,0.1); color: #60A5FA; }
+
+/* Dark mode: card hover shadow */
+html.dark .phase-card:hover {
+  box-shadow:
+    0 2px 4px rgba(0,0,0,0.2),
+    0 8px 24px rgba(0,0,0,0.3);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;

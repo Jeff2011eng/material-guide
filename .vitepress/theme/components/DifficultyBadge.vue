@@ -58,3 +58,13 @@ const label = computed(() => {
 }
 .hard .dot { background: #EF4444; }
 </style>
+
+<style>
+/* Dark mode overrides — unscoped for html.dark to work */
+html.dark .badge-diff.easy { background: rgba(52, 211, 153, 0.1); color: #34D399; }
+html.dark .badge-diff.easy .dot { background: #34D399; }
+html.dark .badge-diff.medium { background: rgba(251, 191, 36, 0.1); color: #FBBF24; }
+html.dark .badge-diff.medium .dot { background: #FBBF24; }
+html.dark .badge-diff.hard { background: rgba(248, 113, 113, 0.1); color: #F87171; }
+html.dark .badge-diff.hard .dot { background: #F87171; }
+</style>
