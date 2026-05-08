@@ -4,6 +4,7 @@ export default defineConfig({
   title: '部署物料准备指南',
   description: '旗舰版代购网站 — 私有化部署物料准备引导',
   lang: 'zh-CN',
+  base: '/material-guide/',
 
   themeConfig: {
     nav: [
