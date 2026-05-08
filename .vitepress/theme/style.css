@@ -719,8 +719,8 @@ body {
   }
   .home-guide { padding: 2rem 1rem 3rem; }
 
-  /* Hide outline dropdown (回到顶部), keep sidebar toggle (菜单) */
-  .VPLocalNav .VPLocalNavOutlineDropdown {
+  /* Hide entire local nav — hamburger in top nav now handles sidebar */
+  .VPLocalNav {
     display: none !important;
   }
 }
