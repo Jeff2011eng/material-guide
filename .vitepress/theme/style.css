@@ -718,6 +718,11 @@ body {
     gap: 12px;
   }
   .home-guide { padding: 2rem 1rem 3rem; }
+
+  /* Hide redundant local nav (duplicate menu + back-to-top) */
+  .VPLocalNav {
+    display: none !important;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
