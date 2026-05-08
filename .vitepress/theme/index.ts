@@ -13,22 +13,35 @@ export default {
   },
   setup() {
     if (typeof window !== 'undefined') {
-      import('vitepress').then(({ inBrowser }) => {
-        if (!inBrowser) return
-        const observer = new MutationObserver(() => {
-          const hamburger = document.querySelector('.VPNavBarHamburger')
-          const sidebarToggle = document.querySelector('.VPLocalNav .menu')
-          if (hamburger && sidebarToggle && !hamburger.dataset.redirected) {
-            hamburger.dataset.redirected = 'true'
-            hamburger.addEventListener('click', (e) => {
-              e.stopImmediatePropagation()
-              e.preventDefault()
-              sidebarToggle.click()
-            }, true)
+      document.addEventListener('click', (e) => {
+        const target = e.target as HTMLElement
+        const hamburger = target.closest('.VPNavBarHamburger') as HTMLElement
+        if (!hamburger) return
+        e.stopImmediatePropagation()
+        e.preventDefault()
+        const sidebar = document.querySelector('.VPSidebar') as HTMLElement
+        if (!sidebar) return
+        const isOpen = sidebar.classList.contains('open')
+        if (isOpen) {
+          sidebar.classList.remove('open')
+          document.body.style.removeProperty('overflow')
+          const bd = document.querySelector('.sidebar-backdrop')
+          bd?.remove()
+        } else {
+          sidebar.classList.add('open')
+          document.body.style.overflow = 'hidden'
+          if (!document.querySelector('.sidebar-backdrop')) {
+            const bd = document.createElement('div')
+            bd.className = 'sidebar-backdrop'
+            bd.addEventListener('click', () => {
+              sidebar.classList.remove('open')
+              document.body.style.removeProperty('overflow')
+              bd.remove()
+            })
+            document.body.appendChild(bd)
           }
-        })
-        observer.observe(document.body, { childList: true, subtree: true })
-      })
+        }
+      }, true)
     }
   },
 }
